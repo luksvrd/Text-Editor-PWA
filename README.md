@@ -1,6 +1,6 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-![npm](https://github.com/luksvrd/Text-Editor-PWA/blob/main/npm.jpg)
+
 ![J.A.T.E.](https://github.com/luksvrd/Text-Editor-PWA/blob/main/jate.jpg)
 
 
@@ -80,6 +80,7 @@ Once you have started installed all dependancies, you can execute the commands b
 
 * `npm run start` in the command line to start both the client and server.
 
+![npm](https://github.com/luksvrd/Text-Editor-PWA/blob/main/npm.jpg)
 
 ### \* [Questions](#questions)
 
