@@ -1,7 +1,7 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-![npm](https://github.com/luksvrd/crispy-social-phone/blob/main/npm.jpg)
-![J.A.T.E.](https://github.com/luksvrd/crispy-social-phone/blob/main/jate.jpg)
+![npm](https://github.com/luksvrd/Text-Editor-PWA/blob/main/npm.jpg)
+![J.A.T.E.](https://github.com/luksvrd/Text-Editor-PWA/blob/main/jate.jpg)
 
 
 ## Built Using
