@@ -1,26 +1,35 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-## Your Task
+![npm](https://github.com/luksvrd/crispy-social-phone/blob/main/npm.jpg)
+![J.A.T.E.](https://github.com/luksvrd/crispy-social-phone/blob/main/jate.jpg)
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+## Built Using
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+JavaScript, Node.js, Express.js, IndexedDB, idb, webpack, babel, and Heroku
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+## Table of Contents
 
-## User Story
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+- [Contributing](#contributing)
+- [License](#license)
 
-```md
+### \* [Description](#description)
+
+This is a text editor that runs in the browser and can function offline. Its a single-page application that meets the PWA criteria and features a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser.
+
+Started with an existing application and implemented methods for getting and storing data to an IndexedDB database. Used a package called idb, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+
+```
+User Story:
 AS A developer
 I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
-```
 
-## Acceptance Criteria
-
-```md
+Acceptance Criteria:
 GIVEN a text editor web application
 WHEN I open my application in my editor
 THEN I should see a client server folder structure
@@ -46,97 +55,57 @@ WHEN I register a service worker
 THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
+
 ```
 
-## Mock-Up
+### \* [Installation](#installation)
 
-The following animation demonstrates the application functionality:
+This application assumes you have a 'complete dev environment' setup - a terminal, Node, & VS Code. To get started, Fork the repository and inside your terminal, run `git clone` to clone the new repo, then `cd` into it and execute `npm i` to install all the dependancies.
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+### \* [Usage](#usage)
 
-The following image shows the application's `manifest.json` file:
+Once you have started installed all dependancies, you can execute the commands below to get the app built & running.
 
-![Demonstration of the finished Module 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
+* All of the necessary scripts will run from the root directory `package.json`.
 
-The following image shows the application's registered service worker:
+* `npm run start:prod` in the command line to run the build script and start our server.
 
-![Demonstration of the finished Module 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
+* `npm run server` in the command line to start the server only, without the client.
 
-The following image shows the application's IndexedDB storage:
+* `npm run install` in the command line to install all of the client's dependencies.
 
-![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
+* `npm run build` in the command line and have our client run the webpack build script.
 
-## Grading Requirements
+* `npm run client` in the command line to start the client only, without the server.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+* `npm run start` in the command line to start both the client and server.
 
-This Challenge is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
+### \* [Questions](#questions)
 
-* Satisfies all of the above acceptance criteria plus the following:
+If you have any questions about the repo, open an issue at https://github.com/luksvrd/crispy-social-phone. You can also find more of my work on [Github](https://github.com/luksvrd)
 
-  * Uses IndexedDB to create an object store and includes both GET and PUT methods
+### \* [Contributing](#contributing)
 
-  * The application works without an internet connection
+Contributors: Lukas Virden
 
-  * Automatically saves content inside the text editor when the DOM window is unfocused
+- Thanks to [Manav Misra](https://github.com/manavm1990/html-css-practice) for the Starter Templates & all his teachings throughout the WUSTL Coding Bootcamp.
 
-  * Bundled with webpack
+### \* [License](#license)
 
-  * Create a service worker with workbox that Caches static assets
+- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+- ![NPM](https://img.shields.io/npm/l/inquirer?style=plastic)
+- ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+- [![npm collaborators](https://img.shields.io/npm/collaborators/inquirer)](https://www.npmjs.com/package/inquirer)
+- [![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/npm/inquirer)](https://www.npmjs.com/package/inquirer)
+- [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
-  * The application should use babel in order to use async / await
+- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  * Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
+Copyright (c) 2022 Lukas Virden, All rights reserved.
 
-  * Can be installed as a Progressive Web Application
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Deployment: 32%
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-* Application deployed to Heroku at live URL with build scripts
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
