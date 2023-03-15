@@ -1,6 +1,6 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
-
+Deployed [Here])https://pwatextediting.herokuapp.com/)
 ![J.A.T.E.](https://github.com/luksvrd/Text-Editor-PWA/blob/main/jate.jpg)
 
 
